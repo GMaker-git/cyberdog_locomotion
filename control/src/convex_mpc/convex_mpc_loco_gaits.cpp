@@ -10,7 +10,7 @@
 
 // #define DRAW_DEBUG_SWINGS
 // #define DRAW_DEBUG_PATH
-// #define USE_TERRAIN_DETECTER
+#define USE_TERRAIN_DETECTER
 
 // #define DEV_MODE
 // #define WALK_GAIT_LOW_FREQ
