@@ -73,7 +73,7 @@ public:
 
           INIT_PARAMETER( vel_xy_yaw_zero_bound ), INIT_PARAMETER( vel_xy_yaw_zero_pronk ),
 
-          INIT_PARAMETER( acc_xy_yaw_max ), INIT_PARAMETER( acc_xy_yaw_min ), INIT_PARAMETER( acc_xy_yaw_max_bound ), INIT_PARAMETER( acc_xy_yaw_min_bound ), INIT_PARAMETER( acc_xy_yaw_max_follow ),
+          INIT_PARAMETER( acc_xy_yaw_max ), INIT_PARAMETER( acc_xy_yaw_min ), INIT_PARAMETER( acc_xy_yaw_max_slow ), INIT_PARAMETER( acc_xy_yaw_min_slow ), INIT_PARAMETER( acc_xy_yaw_max_bound ), INIT_PARAMETER( acc_xy_yaw_min_bound ), INIT_PARAMETER( acc_xy_yaw_max_follow ),
           INIT_PARAMETER( acc_xy_yaw_min_follow ), INIT_PARAMETER( vel_xy_yaw_scale ), INIT_PARAMETER( step_height_max ), INIT_PARAMETER( x_offset_pronk ), INIT_PARAMETER( x_offset_bound ),
           INIT_PARAMETER( x_offset_default ), INIT_PARAMETER( x_offset_trot_10_4 ), INIT_PARAMETER( y_offset_trot_10_4 ), INIT_PARAMETER( y_offset_trot ),
 
@@ -297,6 +297,8 @@ public:
 
     DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_max );
     DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_min );
+    DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_max_slow );
+    DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_min_slow );
     DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_max_bound );
     DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_min_bound );
     DECLARE_PARAMETER( Vec3< double >, acc_xy_yaw_max_follow );

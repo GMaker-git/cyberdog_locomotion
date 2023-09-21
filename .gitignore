@@ -1,6 +1,8 @@
 *~
 *.vscode
 doxygen/
+robotsoftbakup/
+robotsoftbakup.zip
 build
 onboard-build
 *.orig

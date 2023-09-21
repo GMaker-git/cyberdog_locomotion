@@ -1255,8 +1255,8 @@ void ConvexMpcLocoGaits::SetTrotSlowParams() {
     for ( int i = 0; i < 3; i++ ) {
         vel_cmd_min_( i ) = dev_mode_scale_ * user_params_->vel_xy_yaw_min_trot_slow[ i ];
         vel_cmd_max_( i ) = dev_mode_scale_ * user_params_->vel_xy_yaw_max_trot_slow[ i ];
-        acc_cmd_min_( i ) = dev_mode_scale_ * user_params_->acc_xy_yaw_min[ i ];
-        acc_cmd_max_( i ) = dev_mode_scale_ * user_params_->acc_xy_yaw_max[ i ];
+        acc_cmd_min_( i ) = dev_mode_scale_ * user_params_->acc_xy_yaw_min_slow[ i ];
+        acc_cmd_max_( i ) = dev_mode_scale_ * user_params_->acc_xy_yaw_max_slow[ i ];
     }
 
     for ( int i = 0; i < 4; i++ ) {
